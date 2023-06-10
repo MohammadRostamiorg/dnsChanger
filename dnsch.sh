@@ -31,4 +31,4 @@ cat /etc/resolv.conf
 #https://github.com/mohammadrostamiorg
 
 
-# you can use aliases for easer changing for example alias shecan=sudo sh ~/dnsChanger/dnsch.sh sh 
+# you can use aliases for easer changing for example alias shecan=sudo sh ~/dnsChanger/dnsch.sh sh in other distroes 
