@@ -10,5 +10,5 @@ depends=('bash' 'coreutils')
 pkgrel=1
 sha256sums=('3448ffdbff984ed51c6c8f64179b7884691e5c09f3038e816edd166067841b65')
 package() {
-  install -Dm755 dnsch.sh "${pkgdir}/usr/bin/dnschanger"
+  install -Dm755 dnsch.sh "${pkgdir}/usr/bin/dnsch"
 }
