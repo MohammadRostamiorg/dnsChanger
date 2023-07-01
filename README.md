@@ -28,6 +28,6 @@ sudo dnsch g
 ```
 ##### for setting dns on shecan dns :
 ```
-sudo dnsch shecan
+sudo dnsch sh
 ```
 
