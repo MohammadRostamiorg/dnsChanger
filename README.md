@@ -4,6 +4,17 @@
 
 
 ## how to install
+### Install with an aur helper
+#### install with yay
+```
+yay -S dnsch
+```
+#### install with paru
+```
+paru -S dnsch
+```
+
+### install from source
 
 ##### Clone Project from github :
 ```
