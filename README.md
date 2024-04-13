@@ -41,4 +41,20 @@ sudo dnsch g
 ```
 sudo dnsch sh
 ```
+##### for setting dns on cloudflare dns :
+```
+sudo dnsch cf
+```
+##### for setting dns on adguard dns :
+```
+sudo dnsch ag
+```
+##### for setting dns on 403 dns :
+```
+sudo dnsch 403
+```
+##### for setting dns on begzar dns :
+```
+sudo dnsch bg
+```
 
