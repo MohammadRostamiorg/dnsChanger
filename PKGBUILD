@@ -1,5 +1,5 @@
 pkgname=dnsch
-pkgver=1.0
+pkgver=1.1
 pkgdesc="A simple package that helps you to set your Arch linux system on shecan or google"
 url="https://github.com/mohammadrostamiorg/dnsChanger"
 arch=('any')
