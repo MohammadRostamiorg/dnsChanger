@@ -1,5 +1,5 @@
 pkgname=dnsch
-pkgver=1.1
+pkgver=1.5
 pkgdesc="A simple package that helps you to set your Arch linux system to several DNSs"
 url="https://github.com/mohammadrostamiorg/dnsChanger"
 arch=('any')
