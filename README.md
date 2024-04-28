@@ -1,6 +1,6 @@
 # dnsChanger
 
-#### a simple package that helps you to set your Arch linux dns on shecan or google
+#### a simple package that helps you to set your Arch linux dns to several DNSs
 
 
 ## how to install

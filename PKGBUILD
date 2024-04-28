@@ -1,6 +1,6 @@
 pkgname=dnsch
 pkgver=1.1
-pkgdesc="A simple package that helps you to set your Arch linux system on shecan or google"
+pkgdesc="A simple package that helps you to set your Arch linux system to several DNSs"
 url="https://github.com/mohammadrostamiorg/dnsChanger"
 arch=('any')
 license=('MIT')
