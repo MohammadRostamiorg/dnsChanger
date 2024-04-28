@@ -1,6 +1,6 @@
 # dnsChanger
 
-#### a simple package that helps you to set your Arch linux dns on shecan or google
+#### a simple package that helps you to set your Arch linux dns to several DNSs
 
 
 ## how to install
@@ -56,5 +56,13 @@ sudo dnsch 403
 ##### for setting dns on begzar dns :
 ```
 sudo dnsch bg
+```
+##### for setting dns on electro dns :
+```
+sudo dnsch el
+```
+##### for setting dns on radar dns :
+```
+sudo dnsch rd
 ```
 
