@@ -55,7 +55,7 @@ sudo dnsch 403
 ```
 ##### for setting dns on begzar dns :
 ```
-sudo dnsch bg
+sudo dnsch bg   
 ```
 ##### for setting dns on electro dns :
 ```
