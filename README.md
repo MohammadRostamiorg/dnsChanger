@@ -57,4 +57,12 @@ sudo dnsch 403
 ```
 sudo dnsch bg
 ```
+##### for setting dns on electro dns :
+```
+sudo dnsch el
+```
+##### for setting dns on radar dns :
+```
+sudo dnsch rd
+```
 
