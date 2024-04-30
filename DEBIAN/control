@@ -1,0 +1,5 @@
+Package: dnsch
+Version: 1.5
+Maintainer: Mohammad Rostami
+Architecture: all
+Description: A simple package that helps you to set your DNSes system to several DNSes
