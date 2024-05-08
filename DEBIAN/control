@@ -1,5 +1,5 @@
 Package: dnsch
-Version: 1.5
+Version: 1.7
 Maintainer: Mohammad Rostami
 Architecture: all
-Description: A simple package that helps you to set your DNSes system to several DNSes
+Description: A simple package that helps you to set your linux system DNS servers to serval DNS servers

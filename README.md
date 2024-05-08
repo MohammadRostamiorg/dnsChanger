@@ -1,6 +1,6 @@
 # dnsChanger
 
-#### a simple package that helps you to set your Arch linux dns to several DNSs
+#### a simple package that helps you to set your  linux dns to several DNS servers
 
 
 ## how to install
@@ -28,7 +28,6 @@ cd dnsChanger
 ```
 makepkg -sri
 ```
-
 
 
 ## how to use
