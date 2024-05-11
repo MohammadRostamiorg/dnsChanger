@@ -1,6 +1,6 @@
 # dnsChanger
 
-#### a simple package that helps you to set your Arch linux dns to several DNSs
+#### a simple package that helps you to set your  linux dns to several DNS servers
 
 
 ## how to install
@@ -30,7 +30,6 @@ makepkg -sri
 ```
 
 
-
 ## how to use
 
 ##### for setting dns on google dns :
@@ -55,7 +54,7 @@ sudo dnsch 403
 ```
 ##### for setting dns on begzar dns :
 ```
-sudo dnsch bg
+sudo dnsch bg   
 ```
 ##### for setting dns on electro dns :
 ```
