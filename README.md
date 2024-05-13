@@ -32,36 +32,22 @@ makepkg -sri
 
 ## how to use
 
-##### for setting dns on google dns :
+#### Set serval DNS servers 
 ```
-sudo dnsch g
-```
-##### for setting dns on shecan dns :
-```
-sudo dnsch sh
-```
-##### for setting dns on cloudflare dns :
-```
-sudo dnsch cf
-```
-##### for setting dns on adguard dns :
-```
-sudo dnsch ag
-```
-##### for setting dns on 403 dns :
-```
-sudo dnsch 403
-```
-##### for setting dns on begzar dns :
-```
-sudo dnsch bg   
-```
-##### for setting dns on electro dns :
-```
-sudo dnsch el
-```
-##### for setting dns on radar dns :
-```
-sudo dnsch rd
+sudo dnsch {g|sh|ag|cf|403|bg|rd|el}
 ```
 
+#### Set your custom DNS servers 
+```
+sudo dnsch --set 1.2.3.4 1.2.3.4
+```
+
+#### Clear DNS servers 
+```
+sudo dnsch {-c|--clear}
+```
+
+#### Get ping of serveal DNS servers 
+```
+sudo dnsch {-p|--ping}
+```
