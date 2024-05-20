@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="DnsChanger - A simple package that helps you to set your linux dns to several DNS servers">
+    <title>DnsChanger</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/inter.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/jetbrains-mono.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>DnsChanger <sub><a href="https://github.com/MohammadRostamiorg/dnsChanger" title="Source code available on GitHub">GitHub</a></sub></h1>
+    <h2>A simple package that helps you to set your linux dns to several DNS servers</h2>
+    <h3>Install on Debian (and Debian-based distros like Ubuntu)</h3>
+    <p>Download the <code>.deb</code> package file from the <a href="https://github.com/MohammadRostamiorg/dnsChanger/releases/latest">latest release</a>.</p>
+    <h3>Install on Arch Linux (and Arch-based distros like Parch Linux)</h3>
+    <p>DnsChanger is available on <a href="https://aur.archlinux.org/packages/dnsch">AUR</a>. You can use AUR helpers like <a href="https://github.com/Jguer/yay">yay</a> or <a href="https://github.com/Morganamilo/paru">paru</a> to Install it, but feel free to do it your own way.</p>
+    <p>Install on Arch Linux with yay</p>
+    <pre>yay -S dnsch</pre>
+    <p>Install on Arch Linux with paru</p>
+    <pre>paru -S dnsch</pre>
+    <h3>Build and install from source</h3>
+    <p>Clone the project</p>
+    <pre>git clone https://github.com/MohammadRostamiorg/dnsChanger.git && cd dnsChanger</pre>
+    <p>Install package</p>
+    <pre>makepkg -sri</pre>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            link.target = "_blank";
+        });
+        document.querySelectorAll('pre').forEach(pre => {
+            pre.addEventListener('click', ()=>{
+                navigator.clipboard.writeText(pre.textContent);
+                alert(`Command copied.`);
+            })
+        });
+    </script>
+</body>
+</html>
