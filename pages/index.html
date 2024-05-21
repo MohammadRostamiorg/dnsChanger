@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description"
+        content="DnsChanger - A simple package that helps you to set your linux dns to several DNS servers">
+    <title>DnsChanger</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/inter.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/jetbrains-mono.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <h1><span>DnsChanger</span><a href="https://github.com/MohammadRostamiorg/dnsChanger"
+                title="Source code available on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" class="w-5 h-5">
+                    <path
+                        d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
+                    <path
+                        d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
+                </svg>
+            </a>
+        </h1>
+        <h2>A simple package that helps you to set your linux dns to several DNS servers</h2>
+        <h3 id="install-debian">Install on Debian (and Debian-based distros like Ubuntu & Linux Mint)</h3>
+        <p>Download the <code>.deb</code> package file from the <a
+                href="https://github.com/MohammadRostamiorg/dnsChanger/releases/latest">latest release</a>.</p>
+        <h3 id="install-arch">Install on Arch Linux (and Arch-based distros like Parch Linux & Artix Linux)</h3>
+        <p>DnsChanger is available on <a href="https://aur.archlinux.org/packages/dnsch">AUR</a>. You can use AUR
+            helpers like <a href="https://github.com/Jguer/yay">yay</a> or <a
+                href="https://github.com/Morganamilo/paru">paru</a> to Install it, but feel free to do it your own way.
+        </p>
+        <p>Install on Arch Linux with yay</p>
+        <pre>yay -S dnsch</pre>
+        <p>Install on Arch Linux with paru</p>
+        <pre>paru -S dnsch</pre>
+        <h3 id="build">Build and install from source</h3>
+        <p>Clone the project</p>
+        <pre>git clone https://github.com/MohammadRostamiorg/dnsChanger.git && cd dnsChanger</pre>
+        <p>Install package</p>
+        <pre>makepkg -sri</pre>
+        <h3 id="set">To set DNS server</h3>
+        <blockquote>
+            Warning: This program must be used with <code title="Or root privileges">sudo</code>.
+        </blockquote>
+        <pre>sudo dnsch --set {g | sh | ag | cf | 403 | bg | rd | el}</pre>
+        <h3 id="set-custom">To set your custom DNS servers</h3>
+        <pre>sudo dnsch --set 1.2.3.4 1.2.3.4</pre>
+        <h3 id="clear">To clear DNS servers</h3>
+        <pre>sudo dnsch {-c | --clear}</pre>
+        <h3 id="ping">To ping DNS servers</h3>
+        <pre>sudo dnsch {-p | --ping}</pre>
+    </main>
+
+    <script>
+        document.querySelectorAll('h3').forEach(h3 => {
+            h3.addEventListener('click', () => {
+
+                window.location.href.includes('#') ? navigator.clipboard.writeText(`${window.location.href.split('#')[0]}#${h3.id}`) : navigator.clipboard.writeText(`${window.location.href}#${h3.id}`);
+                alert('Link copied.')
+            })
+        })
+        document.querySelectorAll('a').forEach(link => {
+            link.target = "_blank";
+        });
+        document.querySelectorAll('pre').forEach(pre => {
+            pre.addEventListener('click', () => {
+                navigator.clipboard.writeText(pre.textContent);
+                alert('Command copied.');
+            })
+        });
+    </script>
+</body>
+
+</html>
