@@ -1,7 +1,10 @@
 :root {
+    --black: #212529;
     --dark: #343a40;
     --gray: #495057;
     --white: #e9ecef;
+    --blue: #1c7ed6;
+    --red: #f03e3e;
 }
 
 *,
@@ -17,16 +20,12 @@ html {
 }
 
 body {
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--dark);
     color: var(--white);
     font-size: 1.6rem;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
 }
 
 *::selection {
@@ -34,8 +33,9 @@ body {
     background-color: var(--white);
 }
 
-a:link, a:visited {
-    color: #1c7ed6;
+a:link,
+a:visited {
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -43,25 +43,62 @@ a:hover {
     text-decoration: underline;
 }
 
-h1 {
-    font-weight: 900;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
-h1 sub, h1 sub a, h1 sub a:hover {
-    font-weight: 300;
-    color: var(--white) !important;
+h1 {
+    font-weight: 900;
+    display: flex;
+    gap: .8rem;
+}
+
+h1 a svg {
+    fill: var(--white) !important;
     text-decoration: none;
+    width: 2.4rem;
+    height: 2.4rem;
 }
 
 h2 {
     border-bottom: 2px solid var(--gray);
-    margin-bottom: 1.2rem;
+    padding-bottom: .6rem;
 }
 
+h3 {
+    border-top: 2px dotted var(--gray);
+    padding-top: 1.4rem;
+}
+
+h3:hover {
+    text-decoration: underline dotted var(--blue);
+}
+
+h3:first-of-type {
+    border-top: none;
+    padding-top: none;
+}
+
+code,
 pre {
     max-width: fit-content;
     font-family: "JetBrains Mono", monospace;
     padding: 1rem 1.6rem;
     border-radius: .5rem;
-    background-color: var(--gray);
+    background-color: var(--black);
+}
+
+code {
+    padding: .4rem;
+    border-radius: none;
+    background-color: var(--black);
+    font-size: inherit;
+}
+
+blockquote {
+    border-left: 2px solid var(--red);
+    padding-left: .8rem;
 }
