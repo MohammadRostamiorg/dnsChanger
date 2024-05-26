@@ -51,3 +51,6 @@ sudo dnsch {-c|--clear}
 ```
 sudo dnsch {-p|--ping}
 ```
+#### Resotre default DNS serves
+```
+sudo dnsch {-r|--restore}
