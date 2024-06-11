@@ -1,5 +1,0 @@
-Package: dnsch
-Version: 1.9
-Maintainer: Mohammad Rostami
-Architecture: all
-Description: A simple package that helps you to set your linux system DNS servers to serval DNS servers
