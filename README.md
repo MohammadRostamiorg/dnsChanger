@@ -26,6 +26,10 @@ cd dnsChanger
 
 makepkg -sri
 
+### or
+
+sudo make install
+
 ## Usage
 
 ### Set predefined DNS servers
