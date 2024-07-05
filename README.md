@@ -1,56 +1,53 @@
 # dnsChanger
 
-#### a simple package that helps you to set your  linux dns to several DNS servers
+A simple C program that helps you set your Linux DNS to several predefined or custom DNS servers.
 
+## Installation
 
-## how to install
-### Install with an aur helper
-#### install with yay
-```
+### Install with an AUR helper
+
+#### Using yay
+
 yay -S dnsch
-```
-#### install with paru
-```
+
+#### Using paru
+
 paru -S dnsch
-```
 
-### install from source
+### Install from source
 
-##### Clone Project from github :
-```
-git clone https://github.com/MohammadRostamiorg/dnsChanger.git
-```
-##### Go to project directory
-```
+1. Clone the project from GitHub:
+
+git clone https://github.com/MohammadRostamiorg/dnsChanger.git 2. Navigate to the project directory:
+
 cd dnsChanger
-```
-##### install package
-```
+
+3. Build and install the package:
+
 makepkg -sri
-```
 
+## Usage
 
-## how to use
+### Set predefined DNS servers
 
-#### Set serval DNS servers 
-```
 sudo dnsch {g|sh|ag|cf|403|bg|rd|el}
-```
 
-#### Set your custom DNS servers 
-```
-sudo dnsch --set 1.2.3.4 1.2.3.4
-```
+### Set custom DNS servers
 
-#### Clear DNS servers 
-```
+sudo dnsch --set 1.2.3.4 5.6.7.8
+
+### Clear DNS servers
+
 sudo dnsch {-c|--clear}
-```
 
-#### Get ping of serveal DNS servers 
-```
+### Get ping of several DNS servers
+
 sudo dnsch {-p|--ping}
-```
-#### Resotre default DNS serves
-```
+
+### Restore default DNS servers
+
 sudo dnsch {-r|--restore}
+
+## Note
+
+This program requires root privileges to modify system DNS settings.
